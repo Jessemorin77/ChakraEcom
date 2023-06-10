@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://cdn.shopify.com/s/files/1/0607/2398/6608/products/popilush-built-in-shapewear-modal-soft-lounge-dresses-bodycon-dress-33008112173232_540x@2x.jpg?v=1681439827",
+      "title": "Built-In Shapewear Modal Soft Lounge Dresses",
+      "price": "69.99",
+      "colors": ["Red", "Blue", "Green"],
+      "description": "The Popilush 8-in-1 built-in shapewear dresses with a pair of high heels when you’re meeting up with someone special, or throw on some flats for a walk around the park; there are no limits to what this dress can do for you! Easily paired with any style of shoes, as well as jackets to transform the look! Available in short and long forms, long sleeve and slip dresses. Build-in bra with removable bra pads Adjustable straps for a perfect fit Shaping bodycon bodysuit underneath. The smooth and sleek design is perfect for a date night or running errands Double layer waist control, sucking you in and creating an hourglass figure Butt lifting technology to enhance your booty for the BBL effect Smooth modal fabric is moisture-wicking, keeping you fresh and sleek on the go. An open gusset makes bathroom breaks easy, ensuring your comfort. Whole body shaping creates the idea figure you have always wanted. Sculpting Dress, hourglass dress, figure dress. Perfect holiday gift idea for women. 2023 Luxury Spring break, Easter, mother's day, Thanksgiving, Friendsgiving, Christmas and New Year, Birthday, and Valentine's Day gift ideas guide for girlfriend, wife, sister-in-law, mom, aunt and grandma.",
+      "material": "Exterior/outside: 92% Modal / 8% Spandex Interior/linning: 62% Nylon / 38% Spandex",
+      "category": "Mini Dress"
+    },
+    {
+      "id": 2,
+      "image": "https://cdn.shopify.com/s/files/1/0607/2398/6608/files/popilush-built-in-shapewear-sexy-lace-slip-split-maxi-dress-bodycon-summer-dress-33114665320624_540x@2x.jpg?v=1685619297",
+      "title": "Built-in Shapewear Sexy Lace Slip Split Maxi Dress",
+      "price": "119.99",
+      "colors": ["Red", "Blue", "Green"],
+      "description": "The Popilush Built-in Shapewear Sexy Lace Slip Split Maxi Dress with a Body-hugging fit and a Deep-V neck is suitable for wedding, party, date, honeymoon trip, and shopping. With steel wire, it supports your breasts, and don't need to wear a bra. Exquisite lace with thin adjustable shoulder straps. Built-in compressive shorts: tummy control and waist trimming, creating an hourglass figure. The overlapping crotch design makes it convenient for your lavatory visits and prevents positional changes. The crotch is made of cotton fabric and no underwear is needed. Soft and smooth fabric, tight and delicate, 4 ways elastic and skin-friendly.",
+      "material": "OUTSIDE: 52% nylon+48% spandex LINING: 62% nylon+38% spandex"
+    }
+  ]
+}
