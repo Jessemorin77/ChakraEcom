@@ -3,19 +3,20 @@ import React, { createContext, useState, useEffect } from "react";
 export const CartContext = createContext();
 
 export function CartProvider({ children }) {
-  const [cart, setCart] = useState([]);
-
-  // Load cart from local storage once we are client-side
-  useEffect(() => {
-    const cart = window.localStorage.getItem("cart");
-    if (cart) {
-      setCart(JSON.parse(cart));
+  // Initialize cart from local storage if available, else empty array
+  const [cart, setCart] = useState(() => {
+    if (typeof window !== "undefined") {
+      const localCart = window.localStorage.getItem("cart");
+      return localCart ? JSON.parse(localCart) : [];
     }
-  }, []);
+    return [];
+  });
 
   // When the cart changes, save to localStorage
   useEffect(() => {
-    window.localStorage.setItem("cart", JSON.stringify(cart));
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("cart", JSON.stringify(cart));
+    }
   }, [cart]);
 
   const addToCart = (item) => {

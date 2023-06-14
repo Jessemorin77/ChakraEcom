@@ -14,6 +14,9 @@ import { BoxText } from "~/components/HomeScreen/BoxText";
 import { CategoryImagesGrid } from "~/components/HomeScreen/CategoryImagesGrid";
 import ReviewCarousel from "~/components/HomeScreen/ReviewCarousel";
 import ProductList from "~/components/Products/ProductList";
+import Footer from "~/components/footer"
+
+
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
   return (

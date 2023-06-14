@@ -5,12 +5,12 @@ import {
   HStack,
   Icon,
   Image,
-  Link,
   Skeleton,
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
+import Link from 'next/link';
 
 export const Hero = () => (
   <Box
@@ -37,23 +37,25 @@ export const Hero = () => (
         <Stack spacing={{ base: "8", lg: "10" }}>
           <Stack spacing={{ base: "2", lg: "4" }}>
             <Heading size="xl" color={useColorModeValue("red.500", "red.300")}>
-              Misguided
+              BellAire
             </Heading>
             <Heading size="xl" fontWeight="normal">
               Refresh your wardrobe
             </Heading>
           </Stack>
           <HStack spacing="3">
-            <Link
+            <Link href="/shop"
               color={useColorModeValue("red.500", "red.300")}
               fontWeight="bold"
               fontSize="lg"
-            >
-              Discover now
-            </Link>
+          >
+    Discover now
+  
+</Link>
             <Icon
               color={useColorModeValue("red.500", "red.300")}
               as={FaArrowRight}
+              pt={1}
             />
           </HStack>
         </Stack>

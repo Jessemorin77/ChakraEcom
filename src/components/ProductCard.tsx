@@ -27,7 +27,7 @@ export const ProductCard = (props: Props) => {
   return (
     <Stack spacing={{ base: "4", md: "5" }} {...rootProps}>
       <Box position="relative">
-        <AspectRatio ratio={4 / 3}>
+        <AspectRatio ratio={4 / 6}>
           <Image
             src={imageUrl}
             alt={name}

@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  center
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -22,10 +23,13 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import { AuthShowcase } from "~/pages";
+import {CartContext} from '~/components/context/CartContext'
+import CartDrawer from './DrawerCart'
+
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
-
+  const { isOpen: isCartOpen, onOpen: onCartOpen, onClose: onCartClose } = useDisclosure();
   return (
     <Box>
       <Flex
@@ -59,7 +63,7 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            Belliare
+            BellAire
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -69,10 +73,16 @@ export default function WithSubnavigation() {
 
         <Stack
           flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
+          justify={"center"}
           direction={"row"}
           spacing={6}
+          align={center}
         >
+          <Box 
+            pt={4}
+          >
+          <Button onClick={onCartOpen} p={5}>Cart</Button>
+           </Box> 
           <AuthShowcase />
         </Stack>
       </Flex>
@@ -80,6 +90,7 @@ export default function WithSubnavigation() {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
+      <CartDrawer isOpen={isCartOpen} onClose={onCartClose}/>
     </Box>
   );
 }
@@ -248,36 +259,6 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Shop",
     children: [
-      {
-        label: "Dress",
-        subLabel: "",
-        href: "#",
-      },
-      {
-        label: "BodySuit",
-        subLabel: "",
-        href: "#",
-      },
-      {
-        label: "Shapeware",
-        subLabel: "",
-        href: "#",
-      },
-      {
-        label: "Activewear",
-        subLabel: "",
-        href: "#",
-      },
-      {
-        label: "leggings",
-        subLabel: "",
-        href: "#",
-      },
-      {
-        label: "Bras & Panties",
-        subLabel: "",
-        href: "#",
-      },
       {
         label: "Shop All",
         subLabel: "",

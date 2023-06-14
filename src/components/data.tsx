@@ -80,7 +80,7 @@ export const products = [
     currency: "GBP",
     price: 199,
     imageUrl:
-      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=680&q=80",
+      "https://cdn.shopify.com/s/files/1/0607/2398/6608/products/popilush-built-in-shapewear-modal-sculpting-dresses-32909880885424_720x.jpg?v=1681804824",
     rating: 5,
     ratingCount: 1,
     description:

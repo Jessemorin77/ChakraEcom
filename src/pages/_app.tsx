@@ -4,9 +4,11 @@ import { type AppType } from "next/app";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import { CartProvider } from "../components/context/CartContext.tsx";
+import { CartProvider } from "../components/context/CartContext";
 import Chakra from "../components/chakra";
 import Navbar from "../components/Navbar";
+import Footer from "../components/footer"
+
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
@@ -17,6 +19,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <CartProvider>
           <Navbar />
           <Component {...pageProps} />
+          <Footer />
         </CartProvider>
       </SessionProvider>
     </Chakra>
